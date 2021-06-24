@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+
+.logo {
+    float: left;
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;    
+}
+.menu {
+    float: left;
+    color: #fff;
+    padding-left: 430px;
+}
+.menu li {
+    float: left;
+    line-height: 60px;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;      
+}
+.main {
+    width: 100%;
+     height: calc(100% - 60px);
+    background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat , url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;  
+}
+.tittle__container  {
+    float: left;
+   margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;  
+}
+.tittle__container h1 {
+    font-size:60px;
+    font-weight: bold;
+}
+.tittle__container h4 {
+    color: #79818d;
+    margin-top: 34px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.tittle__container input {
+    height: 40px;
+    text-align: center;
+    background: none;
+    border: 2px solid #6d7682;
+    color: #6d7682;
+    border-radius: 5px;
+    margin-top: 54px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 0 16px 0 16px;
+    font-weight: 500;
+}
+.tittle {
+    text-align: center;
+    color: #263244;
+    font-size: 35px;
+    margin-top: 48px;
+}
+.line {
+    margin-top:36px;
+}
+.photo1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.text_aboutme {
+    margin: 18px 0px 0px 580px;
+    width: 740px;
+    height: 110px;
+    color: #3f495a;
+    font-size:15px;
+    font-weight: 545;    
+}
+.text_aboutme p {
+    margin: 14px 0;
+    text-align: left;
+}
+.button_aboutme {
+    padding: 12px;
+     height: 34px;
+    text-align: center;
+    width: 160px;   
+    background: none ;     
+    border: 2px solid #6f707e;
+    border-radius: 5px;
+    color: #6f707e;
+    margin-left: 860px;
+    padding: 12px 12px;
+    background-color: aqua;
+}
