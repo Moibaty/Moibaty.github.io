@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: white;
 }
+
 nav {
     width: 100%;
     height: 60px;
@@ -12,41 +14,48 @@ nav {
     color: white;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 388px;    
+    padding-left: 388px;
 }
+
 .menu {
     float: left;
     color: #fff;
     padding-left: 430px;
 }
+
 .menu li {
     float: left;
     line-height: 60px;
     margin-right: 40px;
     font-size: 16px;
-    text-transform: uppercase;      
+    text-transform: uppercase;
 }
+
 .main {
     width: 100%;
-     height: calc(100% - 60px);
-    background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat , url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;  
+    height: calc(100% - 60px);
+    background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
-.tittle__container  {
+
+.tittle__container {
     float: left;
-   margin: 432px 0px 0px 404px;
+    margin: 432px 0px 0px 404px;
     color: #2c384a;
-    text-align: center;  
+    text-align: center;
 }
+
 .tittle__container h1 {
-    font-size:60px;
+    font-size: 60px;
     font-weight: bold;
 }
+
 .tittle__container h4 {
     color: #79818d;
     margin-top: 34px;
     font-size: 16px;
     font-weight: 700;
 }
+
 .tittle__container input {
     height: 40px;
     text-align: center;
@@ -60,41 +69,364 @@ nav {
     padding: 0 16px 0 16px;
     font-weight: 500;
 }
+
 .tittle {
     text-align: center;
-    color: #263244;
-    font-size: 35px;
+    color: #384354;
+    font-size: 25px;
+    font-weight: 900;
     margin-top: 48px;
 }
-.line {
-    margin-top:36px;
+
+.tittle h2 {
+    font-weight: 600;
 }
+
+.line {
+    margin-top: 36px;
+}
+
 .photo1 {
     text-align: center;
     margin-top: 20px;
 }
+
 .text_aboutme {
     margin: 18px 0px 0px 580px;
-    width: 740px;
+    width: 700px;
     height: 110px;
     color: #3f495a;
-    font-size:15px;
-    font-weight: 545;    
+    font-size: 15px;
+    font-weight: 545;
 }
+
 .text_aboutme p {
     margin: 14px 0;
     text-align: left;
 }
+
 .button_aboutme {
-    padding: 12px;
-     height: 34px;
+    float: left;
+    height: 34px;
     text-align: center;
-    width: 160px;   
-    background: none ;     
+    width: 160px;
+    background: none;
     border: 2px solid #6f707e;
     border-radius: 5px;
     color: #6f707e;
-    margin-left: 860px;
-    padding: 12px 12px;
-    background-color: aqua;
+    margin-left: 850px;
+    box-sizing: border-box;
+}
+
+.button_aboutme img {
+    padding: 8px 4px 8px 12px;
+}
+
+.button_aboutme input {
+    padding: 8px 10px 12px 0px;
+    background: none;
+    color: #6f707e;
+    font-weight: 455;
+}
+
+.WICD {
+    width: 100%;
+    height: 523px;
+    margin-top: 98px;
+    background: url(../img/%D1%87%D1%82%D0%BE_%D1%8F_%D1%83%D0%BC%D0%B5%D1%8E.jpg);
+}
+
+#tittle1 {
+    padding-top: 107px;
+}
+
+.list {
+    margin-left: 250px;
+    text-align: center;
+}
+
+.list li {
+    float: left;
+    margin: 102px 42px 0px 42px;
+}
+
+.list h3 {
+    margin-top: 36px;
+    color: #EB7800;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.list p {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3f495a;
+    line-height: 20px;
+}
+
+.text_cases {
+    text-align: center;
+    margin-top: 38px;
+    color: #3f495a;
+    font-size: 16px;
+}
+
+.img_cases {
+    margin-top: 42px;
+}
+
+.Website {
+    float: left;
+    margin-right: 84px;
+}
+
+.name h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Website h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Web_Name {
+    margin: 40px 0px 0px 390px;
+    color: #384354;
+    line-height: 24px;
+}
+
+.Website input {
+    margin-top: 26px;
+    height: 44px;
+    width: 200px;
+    border: 2px solid #54c4ba;
+    border-radius: 5px;
+    color: #fff;
+    background: #54c4ba;
+}
+
+.cost {
+    margin-top: 200px;
+}
+
+.cost h2 {
+    color: #1c2534;
+}
+
+.form1 {
+    margin: 60px 475px 0px 500px;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+.form1 h3 {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1c2534;
+}
+
+.form1 select {
+    height: 55px;
+    width: 890px;
+    background: #eee;
+    margin-bottom: 50px;
+    border-radius: 1px;
+    color: #737373;
+}
+
+.deadlines_cost {
+    float: left;
+    margin: 24px 780px 0px 500px;
+    line-height: 26px;
+    color: #1c2534;
+}
+
+.deadlines_cost h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.deadlines_cost1 {
+    margin-top: 24px;
+    color: #1c2534;
+    line-height: 26px;
+}
+
+.deadlines_cost1 h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.stats {
+    margin-top: 154px;
+    width: 1920px;
+    height: 499px;
+    background: url(../img/stats.jpg) no-repeat;
+}
+
+.stats h2 {
+    padding-top: 102px;
+}
+
+.list4 {
+    margin: 88px 0px 0px 310px;
+}
+
+.list4 li {
+    margin: 0px 78px;
+}
+
+.stats h3 {
+    margin: 32px 0px 30px 0px;
+    font-size: 23px;
+    font-weight: 900;
+    color: #323e4f;
+}
+
+.stats p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #323e4f;
+}
+
+.stats li {
+    float: left;
+    text-align: center;
+}
+
+.reviews {
+    margin-top: 106px;
+    color: #323e4f;
+}
+
+.photo_reviews {
+    text-align: center;
+    margin: 58px 0px 38px 0px;
+}
+
+.text_reviews {
+    text-align: center;
+    line-height: 18px;
+}
+
+.Mihail {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.points {
+    margin: 50px 0px 0px 900px;
+}
+
+.points li {
+    float: left;
+    margin: 0px 7px 0px 7px;
+}
+
+.my_brain {
+    color: white;
+    margin-top: 90px;
+    background: url(../img/contacts.jpg) no-repeat;
+    width: 1920px;
+    height: 808px;
+}
+
+.list5 {
+    margin: 50px 0px 40px 654px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.list5 li {
+    float: left;
+    margin: 0px 17px;
+    text-align: center;
+}
+
+.list5 h4 {
+    margin-top: 16px;
+}
+
+#number {
+    float: none;
+    margin-right: 680px;
+}
+
+.contacts h2 {
+    padding-top: 104px;
+    color: white;
+}
+
+.text_contacts {
+    margin-top: 34px;
+    text-align: center;
+}
+
+.send_me h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.form2 {
+    margin-top: 44px;
+}
+
+.name input {
+    height: 34px;
+    width: 354px;
+    margin: 0px 15px 0px 580px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 0px 12px 14px;
+
+}
+
+.Email input {
+    height: 34px;
+    width: 354px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 15px;
+    padding: 12px 0px 12px 14px;
+}
+
+.textarea_contacts {
+    margin-top: 14px;
+}
+
+.textarea_contacts textarea {
+    width: 738px;
+    height: 94px;
+    margin-left: 580px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 0px 12px 14px;
+}
+
+.button_contacts {
+    text-align: center;
+}
+
+.button_contacts input {
+    margin-top: 28px;
+    height: 42px;
+    width: 122px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.end {
+    width: 1920px;
+    height: 96px;
+    background: #344051;
+    color: white;  
+}
+.end p {
+    text-align: center;
+    padding: 44px 0px;
 }
