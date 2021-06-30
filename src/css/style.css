@@ -7,6 +7,8 @@ nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 10;
 }
 
 .logo {
@@ -15,7 +17,19 @@ nav {
     font-size: 28px;
     line-height: 60px;
     padding-left: 388px;
+    -webkit-animation: coming ease 2s ;
+    -o-animation: coming ease 2s ;
+    animation: coming ease 2s;
 }
+@keyframes coming {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .menu {
     float: left;
@@ -29,11 +43,59 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight: 500;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6) {
+    animation-delay: 2s;
+}
+.menu li a {
+    color:white;
+    transition: all, 0.1s;
+    transform: scale(1);
+}
+.menu li a:visited {
+    color: white;
+}
+.menu li a:hover {
+    color: #e48506;
+     transform: scale(1.1);
+    display: inline-block;
+}
+.menu li a:active {
+     transform: scale(1.2);
+    display: inline-block;
+}
+
 
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 
@@ -42,6 +104,21 @@ nav {
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: tittlemove ease 1s forwards;
+    -o-animation: tittlemove ease 1s forwards;
+    animation: tittlemove ease 1s forwards;
+   animation-delay: 2.4s;
+}
+@keyframes tittlemove {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
 }
 
 .tittle__container h1 {
@@ -68,6 +145,16 @@ nav {
     margin-right: 14px;
     padding: 0 16px 0 16px;
     font-weight: 500;
+    transition: all, 0.2s;
+    transform: scale(1);
+}
+.tittle__container input:hover {
+    background: #344051;
+    color: white;
+    border-color: #344051;
+}
+.tittle__container input:active {
+    transform: scale(1.1)
 }
 
 .tittle {
@@ -79,7 +166,7 @@ nav {
 }
 
 .tittle h2 {
-    font-weight: 600;
+    font-weight: 600;   
 }
 
 .line {
@@ -118,6 +205,7 @@ nav {
     box-sizing: border-box;
 }
 
+
 .button_aboutme img {
     padding: 8px 4px 8px 12px;
 }
@@ -125,10 +213,19 @@ nav {
 .button_aboutme input {
     padding: 8px 10px 12px 0px;
     background: none;
-    color: #6f707e;
     font-weight: 455;
+    transition: all, 0.2s;
+    transform: scale(1);
+    color: #6f707e;
 }
 
+.button_aboutme:hover {
+    transform: scale(1.1);
+    border-color:#EB7800;
+}
+.button_aboutme:active {
+    transform: scale(1.2)
+}
 .WICD {
     width: 100%;
     height: 523px;
@@ -205,6 +302,17 @@ nav {
     border-radius: 5px;
     color: #fff;
     background: #54c4ba;
+    transform: scale(1);
+    transition: all, 0.2s;
+}
+.Website input:hover {
+    background: #00CDBA;
+    transform: scale(1.1);
+    border-color: #00CDBA;
+
+}
+.Website input:active {
+    transform: scale(1.2);
 }
 
 .cost {
@@ -234,6 +342,7 @@ nav {
     margin-bottom: 50px;
     border-radius: 1px;
     color: #737373;
+    padding-left: 24px;
 }
 
 .deadlines_cost {
@@ -382,7 +491,11 @@ nav {
     float: left;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px 0px 12px 14px;
-
+}
+.name input:focus {
+    background: white;
+    border: 2px solid #EB7800;
+    box-shadow: 0px 0px 5px;
 }
 
 .Email input {
@@ -391,6 +504,11 @@ nav {
     background-color: rgba(255, 255, 255, 0.8);
     margin-left: 15px;
     padding: 12px 0px 12px 14px;
+}
+.Email input:focus {
+     background: white;
+    border: 2px solid #EB7800;
+    box-shadow: 0px 0px 5px;
 }
 
 .textarea_contacts {
@@ -403,6 +521,11 @@ nav {
     margin-left: 580px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px 0px 12px 14px;
+}
+.textarea_contacts textarea:focus {
+     background: white;
+    border: 2px solid #EB7800;
+    box-shadow: 0px 0px 5px;
 }
 
 .button_contacts {
@@ -419,7 +542,19 @@ nav {
     color: white;
     font-size: 18px;
     font-weight: 400;
+    transform: scale(1);
+    transition: all, 0.2s;
 }
+.button_contacts input:hover {
+    transform:scale(1.1);
+    background-color: white;
+    color: #EB7800;
+    border-color: #EB7800;    
+}
+.button_contacts input:active {
+    transform:scale(1.2);
+}
+
 .end {
     width: 1920px;
     height: 96px;
