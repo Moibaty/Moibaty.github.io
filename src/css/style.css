@@ -163,29 +163,6 @@ nav {
 .white-btn:visited {
     color:white;
 }
-@media (max-width:991px) {
-    .tittle__container, .tittle__container h4, .tittle__container input{
-        color: white;
-        position: relative;
-        z-index: 3;
-    }
-    .tittle__container input {
-        border: 2px solid #fff;
-    }
-    .main {
-        position: relative;
-    }
-    .main::after {
-        content: "";
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-        background: rgba(0,0,0,0.4);
-        z-index: 1;
-    }
-}
 
 .tittle {
     text-align: center;
@@ -213,11 +190,6 @@ nav {
 .text_aboutme p {
     margin: 20px 20px 0px 0px;
     text-align: left;
-}
-@media (max-width:768px) {
-    .text_aboutme {
-        padding-left: 40px;
-    }
 }
 .button_aboutme {
     margin-top: 38px;
@@ -252,7 +224,8 @@ nav {
 .WICD {
     width: 100%;
     margin-top: 98px;
-    background: url(../img/%D1%87%D1%82%D0%BE_%D1%8F_%D1%83%D0%BC%D0%B5%D1%8E.jpg);
+    background: url(../img/%D1%87%D1%82%D0%BE_%D1%8F_%D1%83%D0%BC%D0%B5%D1%8E.jpg) no-repeat;
+    background-size: cover;
 }
 .list {
     text-align: center;
@@ -333,31 +306,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
 }
-@media (max-width:768px) {
-    .name {
-        font-size: 14px
-    }
-    .name h4 {
-        font-size: 18px;
-    }
-}
-@media (max-width:576px) {
-    .Web_Name {
-        margin-top: 0px;
-        justify-content: center;
-    }
-    .Website {
-        text-align: center;
-    }
-    .name {
-        margin-top: 20px;
-    }
-}
-@media (max-width:470px) {
-    .Web_Name {
-        margin-top: 0px;
-    }
-}
+
 .cost {
     margin-top: 160px;
 }
@@ -445,16 +394,6 @@ nav {
 .Zayavka input:active {
      transform: scale(1.2);
 }
-@media(max-width:768px) {
-    .form_1 select {
-        height: 40px;
-    }
-}
-@media(max-width:576px) {
-    .form_1 select {
-        height: 30px;
-    }
-}
 .stats {
     margin-top: 32px;
     width: 100%;
@@ -485,14 +424,6 @@ nav {
     float: left;
     text-align: center;
 }
-@media(max-width:576px) {
-    .stats h3 {
-        font-size: 24px;
-    }
-    .stats p {
-    font-size: 16px;
-    }
-}
 .reviews {
     margin-top: 54px;
     color: #323e4f;
@@ -518,34 +449,14 @@ nav {
     float: left;
     margin: 0px 7px;
 }
-@media(max-width:1400px) {
-    .points {
-        padding-left: 30px;
-    }
-}
-@media(max-width:1200px) {
-    .points {
-        padding-left: 60px;
-    }
-}
-@media(max-width:992px) {
-    .points {
-        padding-left: 28px;
-    }
-}
-@media(max-width:768px) {
-    .points {
-        padding-left: 24px;
-          margin-top: 30px; 
-    }
-}
 
 .my_brain {
     color: white;
     margin-top: 90px;
     background: url(../img/contacts.jpg) no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 810px;
+    height: 730px;
 }
 .contacts h2 {
     padding-top: 56px;
@@ -575,7 +486,6 @@ nav {
     font-weight: 600;
 }
 .form2 {
-    margin-top: 28px;
     justify-content: flex-start;
 }
 
@@ -592,10 +502,12 @@ nav {
     border: 2px solid #EB7800;
     box-shadow: 0px 0px 5px;
 }
-.only input {
+.you {
+    text-align: end;
 }
-#you {
-  margin-left: ;
+.only input {
+    display: inline;
+    width: 420px;
 }
 .textarea_contacts {
     margin-top: 14px;
@@ -603,69 +515,17 @@ nav {
 }
 
 .textarea_contacts textarea {
-    width: 696px;
+    width: 100%;
     height: 94px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px 0px 12px 14px;
-    margin-left: 10px;
+    margin-left: 4px;
 }
 .textarea_contacts textarea:focus {
     background: white;
     border: 2px solid #EB7800;
     box-shadow: 0px 0px 5px;
 }
-@media(max-width:1400px) {
-    .form2 input {
-        width: 226px;
-    }
-    .textarea_contacts textarea {
-         width: 474px;
-    }
-}
-@media(max-width:1200px) {
-    .form2 input {
-        width: 186px;
-    }
-     .textarea_contacts textarea {
-         width: 394px;
-    }
-}
-@media(max-width:992px) {
-    .form2 input {
-        width: 208px;
-    }
-    .textarea_contacts textarea {
-         width: 440px;
-    }
-}
-@media(max-width:768px) {
-    .form2 input {
-        width: 150px;
-    }
-    .textarea_contacts textarea {
-         width: 320px;
-    }
-}
-@media(max-width:576px) {
-    .form2 input {
-        width: 154px;
-    }
-    .textarea_contacts textarea {
-         width: 328px;
-         margin-left: 12px;
-    }
-    
-}
-/*@media(max-width:482px) {
-    .form2 input {
-        width: 100px;
-        height: 22px;
-    }
-     .textarea_contacts textarea {
-         width: 230px;
-    }   
-}*/
-
 
 .button_contacts {
     text-align: center;
@@ -695,13 +555,7 @@ nav {
 }
 .social {
     text-align: center;
-    margin-top: 54px;
-}
-@media(max-width:576px) {
-    .my_brain {
-        height: 810px;
-        background: url(../img/contacts.jpg) no-repeat 100%;
-    }
+    margin-top: 30px;
 }
 .google_map img {
     max-width: 100%;
@@ -716,4 +570,140 @@ nav {
     text-align: center;
     padding: 44px 0px;
 }
-
+@media(max-width:1400px) {
+    .points {
+        padding-left: 30px;
+    }
+    .form2 input {
+        width: 310px;
+    }
+    .textarea_contacts textarea {
+         margin-left: 6px;
+    }
+}
+@media(max-width:1200px) {
+    .points {
+        padding-left: 60px;
+    }
+     .form2 input {
+        width: 219px;
+    }
+     .textarea_contacts textarea {
+       margin-left: 5px; 
+    }
+}
+@media(max-width:992px) {
+    .points {
+        padding-left: 28px;
+    }
+    .form2 input {
+        width: 219px;
+    }
+    /*.textarea_contacts textarea {
+         width: 440px;
+    }*/
+}
+@media (max-width:991px) {
+    .tittle__container, .tittle__container h4, .tittle__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .tittle__container input {
+        border: 2px solid #fff;
+    }
+    .main {
+        position: relative;
+    }
+    .main::after {
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+@media (max-width:768px) {
+    .text_aboutme {
+        padding-left: 40px;
+    }
+    .name {
+        font-size: 14px
+    }
+    .name h4 {
+        font-size: 18px;
+    }
+     .form_1 select {
+        height: 40px;
+    }
+     .points {
+        padding-left: 24px;
+          margin-top: 30px; 
+    }
+     .form2 input {
+        width: 159px;
+    }
+   /* .textarea_contacts textarea {
+         width: 320px;
+    }*/
+    .my_brain {
+        height: 760px;
+    }
+}
+@media (max-width:576px) {
+    .Web_Name {
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .Website {
+        text-align: center;
+    }
+    .name {
+        margin-top: 20px;
+    }    
+    .form_1 select {
+        height: 30px;
+    }
+     .stats h3 {
+        font-size: 24px;
+    }
+    .stats p {
+    font-size: 16px;
+    }
+     .form2 input {
+        width: 154px;
+    }
+    .only input {
+        width: 100%;
+        height: 20px;
+    }
+   .textarea_contacts textarea { 
+       margin-left: 5px;
+       height: 70px;
+    }
+    .you {
+       margin-right: 7px;
+    }
+    .we {
+       margin-left: 7px; 
+    }
+     .my_brain {
+        height: 850px;
+    }
+}
+@media (max-width:470px) {
+    .Web_Name {
+        margin-top: 0px;
+    }
+}
+@media(max-width:386px) {
+    .my_brain {
+        height: 880px;
+    }
+    .social {
+        margin-top: 15px;
+    }
+}
