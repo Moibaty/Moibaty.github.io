@@ -238,8 +238,8 @@ nav {
 
 .list p {
     margin-top: 16px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     color: #3f495a;
     line-height: 20px;
 }
@@ -267,12 +267,16 @@ nav {
 .img_cases {
     margin-top: 42px;
 }
-.img_cases img {
+/*.img_cases img {
    width: 100%;
-}
+}*/
 .Website h4 {
     font-size: 20px;
     font-weight: 600;
+}
+.Website p {
+    font-size: 15px;
+    font-weight: 500;
 }
 .Web_Name {
     margin-top: 40px;
@@ -436,9 +440,17 @@ nav {
     text-align: center;
     line-height: 18px;
 }
+.text_reviews p {
+    font-size: 15px;
+    font-weight: 500;
+}
 .Mihail {
     margin-top: 40px;
     text-align: center;
+}
+.Mihail p {
+    font-size: 15px;
+    font-weight: 500;
 }
 .points {
     margin-top: 50px; 
@@ -448,6 +460,9 @@ nav {
 .points li {
     float: left;
     margin: 0px 7px;
+}
+.carrev p {
+    color: black;
 }
 
 .my_brain {
@@ -476,6 +491,8 @@ nav {
 
 .list5 p {
     margin-top: 16px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .tittle2_contacts {
     margin-top: 10px;
@@ -520,6 +537,8 @@ nav {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px 14px;
     margin-left: 4px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .textarea_contacts textarea:focus {
     background: white;
@@ -570,6 +589,63 @@ nav {
     text-align: center;
     padding: 44px 0px;
 }
+.active {
+    font-size: 22px;
+    border-bottom: 3px solid #fff;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.popup {
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #323e4f;
+    color: #fff;
+    z-index: 200;
+}
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+.close-popup::before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(-45deg);
+}
+.close-popup::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(45deg);
+}
+
+
+
+
+
 @media(max-width:1400px) {
     .points {
         padding-left: 30px;

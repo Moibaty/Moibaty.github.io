@@ -26,12 +26,12 @@
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="#">Обо мне</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Кейсы</a></li>
-                                <li><a href="#">Прайс</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#aboutme">Обо мне</a></li>
+                                <li><a href="#services">Услуги</a></li>
+                                <li><a href="#Cases">Кейсы</a></li>
+                                <li><a href="#Price">Прайс</a></li>
+                                <li><a href="#Reviews">Отзывы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -42,12 +42,12 @@
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="#">Услуги</a></li>
-                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                                <li><a class="dropdown-item" href="#">Прайс</a></li>
-                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                <li><a class="dropdown-item" href="#aboutme">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#services">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#Cases">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#Price">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#Reviews">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
 
@@ -58,6 +58,7 @@
         </nav>
 
     </header>
+
     <section class="main">
         <div class="container h-100">
             <div class="row align-items-center h-100">
@@ -71,9 +72,16 @@
                 </div>
             </div>
         </div>
-
+        <dic class="overlay js-overlay-campaign">
+            <div class="popup js-popup-campaign">
+                <h2>Внимание, акция!</h2>
+                <p>Вы 10000-ый посетитель сайта. В честь этого мы дарим вам скидку 15% на любой товар из асортимента!</p>
+                <div class="close-popup js-close-campaign">
+                </div>
+            </div>
+        </dic>
     </section>
-    <section class="aboutme" id="aboutme">
+    <section class="aboutme section" id="aboutme">
         <div class="container ">
             <div class="row justify-content-center">
                 <div class=" tittle col-xxl-2 col-xl-3 col-lg-4">
@@ -100,7 +108,7 @@
             </div>
         </div>
     </section>
-    <section class="WICD" id="services">
+    <section class="WICD section" id="services">
         <div class="container ">
             <div class="row justify-content-center">
                 <div class=" tittle col-xxl-2 col-xl-3 col-lg-4">
@@ -143,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="cases" id="Cases">
+    <section class="cases section" id="Cases">
         <div class="container ">
             <div class="row justify-content-center">
                 <div class=" tittle col-xxl-2 col-xl-3 col-lg-4">
@@ -158,8 +166,38 @@
                     </p>
                 </div>
                 <div class="img_cases col-12">
-                    <img src="img/cases1.jpg">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/maket.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/maket1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/maket2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
             </div>
             <div class="row Web_Name">
                 <div class="Website col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-5 col-10">
@@ -176,7 +214,7 @@
             </div>
         </div>
     </section>
-    <section class="cost" id="Price">
+    <section class="cost section" id="Price">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10 bruh  ">
@@ -215,9 +253,9 @@
                             <p>Сроки</p>
                             <p>Стоимость</p>
                         </div>
-                        <div class="deadlines_cost1 col-1 offset-7">
-                            <p>0</p>
-                            <p>0</p>
+                        <div class="deadlines_cost1 col-2 offset-6">
+                            <p id="Sroki">0</p>
+                            <p id="Cena">0</p>
                         </div>
                     </div>
                     <div class="row justify-content-center Zayavka ">
@@ -233,7 +271,7 @@
             </div>
         </div>
     </section>
-    <section class="stats">
+    <section class="stats" id="statistika">
         <div class="container">
             <div class="row justify-content-center">
                 <div class=" tittle col-xxl-4 col-xl-5 col-lg-6">
@@ -241,31 +279,31 @@
                     <img class="line" src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="ananas">
                 <div class="col-3 list4">
                     <img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png">
-                    <h3>120</h3>
+                    <h3 class="animationnumbers" data-max="120">120</h3>
                     <p>счастливых клиентов</p>
                 </div>
                 <div class="col-3 list4">
                     <img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png">
-                    <h3>4,600</h3>
+                    <h3 class="animationnumbers" data-max="4600">4600</h3>
                     <p>часов работы</p>
                 </div>
                 <div class="col-3 list4">
                     <img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png">
-                    <h3>340</h3>
+                    <h3 class="animationnumbers" data-max="340">340</h3>
                     <p>проекетов завершено</p>
                 </div>
                 <div class="col-3 list4">
                     <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png">
-                    <h3>23</h3>
+                    <h3 class="animationnumbers" data-max="23">23</h3>
                     <p>наград получено</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="reviews" id="Reviews">
+    <section class="reviews section" id="Reviews">
         <div class="container">
             <div class="row justify-content-center">
                 <div class=" tittle col-xxl-2 col-xl-3 col-lg-4">
@@ -273,6 +311,14 @@
                     <img class="line" src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png">
                 </div>
             </div>
+            
+
+
+
+
+
+
+
             <div class="row justify-content-center">
                 <div class="photo_reviews col-xxl-2 col-xl-3 col-lg-3">
                     <img src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B02.jpg">
@@ -303,9 +349,10 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     </section>
-    <section class="my_brain" id="contacts">
+    <section class="my_brain section" id="contacts">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="tittle contacts col-xxl-4 col-xl-4 col-lg-4 col-md-5 ">
@@ -319,15 +366,15 @@
                 </div>
             </div>
             <div class="row list5 justify-content-center">
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5">
+                <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-5">
                     <img src="img/%D0%B3%D0%B5%D0%BE.png">
                     <p>Санкт-Петербург<br>Невский проспект 11</p>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5">
+                <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-5">
                     <img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png">
                     <p>info@companyname.com</p>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5">
+                <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-5">
                     <img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png">
                     <p>+7 999 999-99-99</p>
                 </div>
@@ -386,7 +433,9 @@
     <div class="end">
         <p> Copyright &#169 2021 Андрей Браун. Design by Web</p>
     </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>
 
