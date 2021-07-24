@@ -1,9 +1,9 @@
 "use strict"
 
 
-/*var array = [];
+var array = [];
 
-var l = prompt("ТИП САЙТА :\n 1-Интернет-магазин(30.000руб.)\n 2-Сайт-визитка(10.000руб.)\n 3-Корпоративные сайты(50.000руб.)");
+/*var l = prompt("ТИП САЙТА :\n 1-Интернет-магазин(30.000руб.)\n 2-Сайт-визитка(10.000руб.)\n 3-Корпоративные сайты(50.000руб.)");
 for (var h = Number(l); h != 1 && h != 2 && h != 3;) {
     alert("Недопустимое значение.\n Напишите номер желаемого ответа!");
     h = prompt("ТИП САЙТА :\n 1-Интернет-магазин(30.000руб.)\n 2-Сайт-визитка(10.000руб.)\n 3-Корпоративные сайты(50.000руб.)");
@@ -91,13 +91,12 @@ document.getElementById("Cena").textContent= f;*/
 
 
 
-
 $(document).ready(function () {
     let options = {
         threshold: [0.5]
     };
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.animationnumbers');
+    let elements = $('#ananas');
     elements.each((i, el) => {
         observer.observe(el);
     });
@@ -174,3 +173,90 @@ $(window).scroll(() => {
        }
     });
 }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+var select = document.getElementById("SiteType");
+var value = select.value;
+var c = Number(value);
+array[0] = c;
+var select1 = document.getElementById("Design");
+var value1 = select1.value;
+var d = Number(value1);
+array[1] = d;
+var select2 = document.getElementById("adaptability");
+var value2 = select2.value;
+var k = Number(value2);
+array[2] = k;
+
+var p = 0;
+var t = 0;
+if(array[0] == 1) {
+    p = 30000;
+    t = 14;
+};
+if(array[0] == 2) {
+    p = 10000;
+    t = 7;
+};
+if(array[0] == 3) {
+    p = 50000;
+    t = 21;
+};
+
+if(array[1] == 1) {
+    p +=5000;
+     t += 2;
+};
+if(array[1] == 2) {
+    p +=1000;
+    t += 1;
+};
+if(array[2] == 1) {
+    p += 3000;
+    t += 2;
+};
+if(array[2] == 2) {
+    p += 2000;
+    t += 2;
+};
+if(array[2] == 3) {
+    p += 4000;
+    t += 4;
+};
+
+t = String(t);
+p = String(p)
+var m = t + " сут.";
+var f = p + " руб.";
+document.getElementById("Sroki").textContent= m;
+document.getElementById("Cena").textContent= f;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
