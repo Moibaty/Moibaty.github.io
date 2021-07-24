@@ -1,7 +1,7 @@
 "use strict"
 
 
-var array = [];
+/*var array = [];
 
 var l = prompt("ТИП САЙТА :\n 1-Интернет-магазин(30.000руб.)\n 2-Сайт-визитка(10.000руб.)\n 3-Корпоративные сайты(50.000руб.)");
 for (var h = Number(l); h != 1 && h != 2 && h != 3;) {
@@ -75,7 +75,7 @@ console.log(t);
 var p = t + " сут.";
 var f = c + " руб.";
 document.getElementById("Sroki").textContent= p;
-document.getElementById("Cena").textContent= f;
+document.getElementById("Cena").textContent= f;*/
 
 
 
