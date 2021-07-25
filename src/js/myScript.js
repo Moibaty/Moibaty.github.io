@@ -189,7 +189,7 @@ $(window).scroll(() => {
 
 
 
-	  
+function calc() { 
 var select = document.getElementById("SiteType");
 var value = select.value;
 var c = Number(value);
@@ -245,7 +245,7 @@ var m = t + " сут.";
 var f = p + " руб.";
 document.getElementById("Sroki").textContent= m;
 document.getElementById("Cena").textContent= f;
-
+};
 
 
 
