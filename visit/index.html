@@ -226,7 +226,7 @@
                     </div>
                     <div class="row justify-content-center">
 
-                        <form name="form_price" class="form_1 col-10" action="php/mail.php" method="post">
+                        <form class="form_1 col-10">
                             <h3>ТИП САЙТА</h3>
                             <select name="list1" id="SiteType" onchange="calc()">
                                 <option value="0" disabled selected>Выберите пункт...</option>
@@ -247,24 +247,47 @@
                                 <option value="2">2-Только широкоформатные экраны(≥992px)</option>
                                 <option value="3">3-Все устройства (≥375px)</option>
                             </select>
-                             <div class="row justify-content-center rs">
-                        <div class="deadlines_cost col-2">
-                            <p>Сроки</p>
-                            <p>Стоимость</p>
-                        </div>
-                        <div class="deadlines_cost1 col-2 offset-6">
-                            <p id="Sroki">0</p>
-                            <p id="Cena">0</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center Zayavka ">
-                        <input class="col-2" type="submit" value="Оставить заявку">
-
-                    </div>
-
+                            <div class="row justify-content-center rs">
+                                <div class="deadlines_cost col-2">
+                                    <p>Сроки</p>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div class="deadlines_cost1 col-2 offset-6">
+                                    <p id="Sroki">0</p>
+                                    <p id="Cena">0</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center Zayavka">
+                                <button class="col-2" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="modalForm" action="php/mail.php" method="POST">
+                                        <p class="col-3 VN">Имя:</p>
+                                        <input class="col-7 modalInput" name="user_name" type="text" placeholder="Введите своё имя">
+                                        <p class="col-3 VN">Почта:</p>
+                                        <input class="col-7 modalInput" name="user_email" type="email" placeholder="Введите свой email">
+                                        <p class="col-3 VN">Телефон:</p>
+                                        <input class="col-7 modalInput" name="user_tel" type="tel" id="phone" placeholder="Введите свой телефонный номер">
+                                        </form> 
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                      <button type="submit" class="btn btn-primary">Отправить</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
                         </form>
                     </div>
-                   
+
 
 
 
@@ -315,11 +338,6 @@
             </div>
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row justify-content-center">
@@ -425,7 +443,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <form class="row name form2 justify-content-center" action="#">
+                <form class="row name form2 justify-content-center" action="php/mail.php">
                     <div class="only you col-xxl-5 col-xl-4 col-lg-4 col-md-6  col-sm-6 col-4">
                         <input type="text" name="Name" placeholder="Имя" id="you">
                     </div>
@@ -434,7 +452,7 @@
                     </div>
                 </form>
             </div>
-            <form class="row justify-content-center" action="#">
+            <form class="row justify-content-center" action="php/mail.php">
                 <div class="textarea_contacts col-xxl-8 col-xl-7 col-lg-6 col-md-8 col-sm-8 col-8">
                     <textarea name="textarea" cols="46" rows="10" placeholder="Сообщение"></textarea>
                 </div>
@@ -468,16 +486,16 @@
         </div>
     </section>
     <div class="google_map">
-       
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57171.72232263543!2d-71.70190865605113!3d42.974480981942044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1627309995376!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57171.72232263543!2d-71.70190865605113!3d42.974480981942044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1627309995376!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
     </div>
     <div class="end">
         <p> Copyright &#169 2021 Андрей Браун. Design by Web</p>
     </div>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jGuerymasked.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>

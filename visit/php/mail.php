@@ -3,8 +3,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$form= $_POST['form_price'];
-
+$name= $_POST['user_name'];
+$email= $_POST['user_email'];
+$tel= $_POST['user_tel'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -26,7 +27,7 @@ $mail->addAddress('artursharif2005@icloud.com');     // Кому будет ух
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$form . ' оставил заявку!';
+$mail->Body    = ''.$name .$email .$tel .' оставил заявку!';
 $mail->AltBody = '';
 
 if(!$mail->send()) {
