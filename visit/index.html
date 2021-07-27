@@ -270,16 +270,26 @@
                                     <div class="modal-body">
                                       <form class="modalForm" action="php/mail.php" method="POST">
                                         <p class="col-3 VN">Имя:</p>
-                                        <input class="col-7 modalInput" name="user_name" type="text" placeholder="Введите своё имя">
+                                        <div class="row justify-content-center">
+                                            <input class="col-10 modalInput" name="user_name" type="text"
+                                            placeholder="Введите своё имя">
+                                        </div>
                                         <p class="col-3 VN">Почта:</p>
-                                        <input class="col-7 modalInput" name="user_email" type="email" placeholder="Введите свой email">
+                                        <div class="row justify-content-center">
+                                            <input class="col-10 modalInput" name="user_email" type="email" 
+                                            placeholder="Введите свой email">
+                                        </div>
                                         <p class="col-3 VN">Телефон:</p>
-                                        <input class="col-7 modalInput" name="user_tel" type="tel" id="phone" placeholder="Введите свой телефонный номер">
+                                        <div class="row justify-content-center">
+                                            <input class="col-10 modalInput" name="user_tel" type="tel" id="phone"
+                                            placeholder="Введите свой телефонный номер">
+                                        </div>
+                                         <div class="row justify-content-center">
+                                            <button type="submit" class="btn btn-primary col-3">Отправить</button>
+                                        </div>
                                         </form> 
                                     </div>
                                     <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                                      <button type="submit" class="btn btn-primary">Отправить</button>
                                     </div>
                                   </div>
                                 </div>
