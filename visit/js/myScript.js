@@ -130,12 +130,14 @@ $("#phone").mask("+7(999) 999-9999");
 
 
 $(document).ready(function () {
-$('form').submit(function(event){
+    
+$('.modalForm').submit(function(event){
         event.preventDefault();
+    
         $.ajax ({
             type: "POST",
             url: "php/mail.php",
-            data: $(this).find("input").val(""),
+            data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
             alert("Успешно отправлено!");
@@ -143,12 +145,13 @@ $('form').submit(function(event){
         });
         return false;
     });
-    $('form').submit(function(event){
+    $('.form2').submit(function(event){
         event.preventDefault();
+    
         $.ajax ({
             type: "POST",
             url: "php/test.php",
-            data: $(this).find("input").val(""),
+            data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
             alert("Успешно отправлено!");
