@@ -6,17 +6,18 @@ $mail->CharSet = 'utf-8';
 $name= $_POST['user_name'];
 $email= $_POST['user_email'];
 $tel= $_POST['user_tel'];
+
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'gichev@internet.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Artur18052005'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'pochta_site@inbox.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'CjXJVGgJNSaiPSES28JV'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('gichev@internet.ru'); // от кого будет уходить письмо?
+$mail->setFrom('pochta_site@inbox.ru'); // от кого будет уходить письмо?
 $mail->addAddress('artursharif2005@icloud.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -27,7 +28,10 @@ $mail->addAddress('artursharif2005@icloud.com');     // Кому будет ух
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = ''.$name .$email .$tel .' оставил заявку!';
+$mail->Body    = ''.'Имя:' .' ' .$name ."<br>"
+    .' Email:' .' ' .$email ."<br>"
+    .' Телефон:' .' ' .$tel ."<br>"
+    .' оставил заявку!';
 $mail->AltBody = '';
 
 if(!$mail->send()) {

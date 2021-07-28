@@ -317,7 +317,7 @@ nav {
 .bruh {
     border: 1px solid #FCFCFC;
     box-shadow: 0px 0px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
      margin-top: 60px;
 }
 #R {
@@ -326,7 +326,7 @@ nav {
     font-size: 38px;
 }
 .form_1 {
-    border-bottom: 2px solid #d1d1d1;
+    
      margin-top: 56px;
     
     
@@ -524,7 +524,8 @@ nav {
 }
 .only input {
     display: inline;
-    width: 420px;
+    width: 412px;
+    border-radius: 5px;
 }
 .textarea_contacts {
     margin-top: 14px;
@@ -536,9 +537,9 @@ nav {
     height: 94px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 12px 14px;
-    margin-left: 4px;
     font-size: 15px;
     font-weight: 500;
+    border-radius: 5px;
 }
 .textarea_contacts textarea:focus {
     background: white;
@@ -547,11 +548,11 @@ nav {
 }
 
 .button_contacts {
+    display: block;
     text-align: center;
 }
 
 .button_contacts input {
-    margin-top: 28px;
     height: 42px;
     width: 122px;
     border: 3px solid #fff;
@@ -562,6 +563,10 @@ nav {
     font-weight: 400;
     transform: scale(1);
     transition: all, 0.2s;
+    margin: auto;
+    margin-top: 28px;
+    padding: 5px;
+    
 }
 .button_contacts input:hover {
     transform:scale(1.1);
@@ -700,33 +705,27 @@ nav {
         padding-left: 30px;
     }
     .form2 input {
-        width: 310px;
+        width: 305px;
     }
-    .textarea_contacts textarea {
-         margin-left: 6px;
-    }
+    
 }
 @media(max-width:1200px) {
     .points {
         padding-left: 60px;
     }
      .form2 input {
-        width: 219px;
+        width: 214px;
     }
-     .textarea_contacts textarea {
-       margin-left: 5px; 
-    }
+     
 }
 @media(max-width:992px) {
     .points {
         padding-left: 28px;
     }
     .form2 input {
-        width: 219px;
+        width: 212px;
     }
-    /*.textarea_contacts textarea {
-         width: 440px;
-    }*/
+   
 }
 @media (max-width:991px) {
     .tittle__container, .tittle__container h4, .tittle__container input{
@@ -769,11 +768,9 @@ nav {
           margin-top: 30px; 
     }
      .form2 input {
-        width: 159px;
+        width: 152px;
     }
-   /* .textarea_contacts textarea {
-         width: 320px;
-    }*/
+   
     .my_brain {
         height: 760px;
     }
@@ -806,16 +803,9 @@ nav {
         height: 20px;
     }
    .textarea_contacts textarea { 
-       margin-left: 5px;
        height: 70px;
     }
-    .you {
-       margin-right: 7px;
-    }
-    .we {
-       margin-left: 7px; 
-    }
-     .my_brain {
+    .my_brain {
         height: 850px;
     }
 }

@@ -12,7 +12,7 @@ $(document).ready(function () {
         observer.observe(el);
     });
 });
-
+    
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
@@ -47,7 +47,7 @@ $(window).on('load', function() {
             $('main').css('filter','blur(5px)');
             $(".js-overlay-campaign").fadeIn();
         }
-    }, 10000);
+    }, 15000);
 });
 
 $('a[href^="#"]').click(function() {
@@ -128,6 +128,35 @@ document.getElementById("Cena").textContent= f;
 
 $("#phone").mask("+7(999) 999-9999");
 
+
+$(document).ready(function () {
+$('form').submit(function(event){
+        event.preventDefault();
+        $.ajax ({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).find("input").val(""),
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+    $('form').submit(function(event){
+        event.preventDefault();
+        $.ajax ({
+            type: "POST",
+            url: "php/test.php",
+            data: $(this).find("input").val(""),
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+});
 
 
 
