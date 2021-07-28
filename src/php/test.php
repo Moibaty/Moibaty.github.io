@@ -3,9 +3,10 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name= $_POST['user_name'];
-$email= $_POST['user_email'];
-$tel= $_POST['user_tel'];
+
+$name2= $_POST['Name'];
+$email2= $_POST['Email'];
+$textarea= $_POST['textarea'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -27,11 +28,10 @@ $mail->addAddress('artursharif2005@icloud.com');     // Кому будет ух
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = ''.'Имя:' .' ' .$name ."<br>"
-    .' Email:' .' ' .$email ."<br>"
-    .' Телефон:' .' ' .$tel ."<br>"
-    .' оставил заявку!';
+$mail->Subject = 'Сообщение с сайта';
+$mail->Body    = ''.'Имя:' .' ' .$name2 ."<br>"
+    .' Email:' .' ' .$email2 ."<br>"
+    .' Сообщение:' .' ' .$textarea ;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
